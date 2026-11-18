@@ -1,0 +1,36 @@
+# Android Studio
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local configuration
+local.properties
+
+# Firebase configuration
+google-services.json
+**/google-services.json
+
+# Signing keys
+*.jks
+*.keystore
+key.properties
+
+# Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS files
+.DS_Store
+Thumbs.db
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true"
+    android:padding="20dp"
+    tools:context=".HelpSupportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- MAIN CARD -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#F9FFFFFF"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- TITLE -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help &amp; Support"
+                    android:textColor="#222222"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Frequently asked questions"
+                    android:textColor="#777777"
+                    android:textSize="14sp" />
+
+                <!-- SPACE -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <!-- FAQ CARD -->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- FAQ 1 -->
+
+                        <LinearLayout
+                            android:id="@+id/q1Layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="18dp">
+
+                            <TextView
+                                android:id="@+id/q1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="What is AQI?"
+                                android:textColor="#222222"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/a1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="AQI shows air quality level and pollution impact."
+                                android:textColor="#777777"
+                                android:textSize="15sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#EEEEEE" />
+
+                        <!-- FAQ 2 -->
+
+                        <LinearLayout
+                            android:id="@+id/q2Layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="18dp">
+
+                            <TextView
+                                android:id="@+id/q2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="How alerts work?"
+                                android:textColor="#222222"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/a2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="App sends alerts when AQI becomes unhealthy."
+                                android:textColor="#777777"
+                                android:textSize="15sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#EEEEEE" />
+
+                        <!-- FAQ 3 -->
+
+                        <LinearLayout
+                            android:id="@+id/q3Layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="18dp">
+
+                            <TextView
+                                android:id="@+id/q3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Can I manually predict AQI?"
+                                android:textColor="#222222"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/a3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Yes, use the Manual Prediction feature to enter weather data."
+                                android:textColor="#777777"
+                                android:textSize="15sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- SPACE -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp" />
+
+                <!-- BUTTON -->
+
+                <Button
+                    android:id="@+id/feedbackBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="#8BC34A"
+                    android:text="Send Feedback"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

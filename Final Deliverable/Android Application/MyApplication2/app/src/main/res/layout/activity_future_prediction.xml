@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:outlineProvider="bounds"
+        android:text="History"
+        android:textAlignment="center"
+        android:textColor="#A9A9A9"
+        android:textSize="24sp"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- FILTER SECTION -->
+        <ImageButton
+            android:id="@+id/filterInput"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:foreground="@android:drawable/ic_menu_today"
+            android:hint="Filter by Date"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/filterView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="Filter by Date"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <!-- LIST -->
+    <ListView
+        android:id="@+id/listViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

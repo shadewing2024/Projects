@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- HEADER CARD -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#F9FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <!-- TITLE -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AQI Handler"
+                    android:textColor="#222222"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Manage AQI records"
+                    android:textColor="#777777"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- ADD BUTTON -->
+
+            <Button
+                android:id="@+id/addAQIBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#8BC34A"
+                android:text="+"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- SPACE -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+
+            <ListView
+                android:id="@+id/listViewAQICol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#EEEEEE"
+                android:dividerHeight="1dp"
+                android:scrollbarSize="6dp"
+                android:smoothScrollbar="true" />
+
+
+
+</LinearLayout>
